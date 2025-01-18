@@ -18,7 +18,7 @@ defmodule LiveViewStudioWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-
+    live "/light", LightLive
     live "/sandbox", SandboxLive
     live "/sales", SalesLive
     live "/flights", FlightsLive
